@@ -1,0 +1,35 @@
+.container{
+    /* border: 2px solid black; */
+    height:100%;
+    margin: 10px;
+    
+}
+.box1,.box2,.box3,.box3,.box4,.box5,.box6,.box7,.box8{
+    /* border: 2px solid black; */
+    display: inline-block;
+    width:281px;
+    margin:10px;
+    position: relative;
+
+}
+img{
+    width:100%;
+    margin:0;
+    padding:0;
+}
+p{
+    position:absolute;
+    z-index: 1;
+    top:0px;
+    left:0px;
+    margin: 0;
+    background-color: black;
+    color:white;
+    height: 25px;
+    padding: 20px;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    line-height: 3px;
+    font-size: 20px; 
+}
