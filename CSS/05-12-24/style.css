@@ -1,11 +1,45 @@
+.main-container {
+    background-image: url("./images/architect.jpg");
+    background-size: cover;
+    margin: 0;
+    height: 100vh;
+    
+}
+
+
+.up{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: row;
+    
+}
+
+.a{
+    color: white;
+    background-color: black;
+    padding: 10px 20px;
+    margin: 0px;
+}
+
+.b {
+    color: white;
+    margin: 0;
+}
+
+
+
+
+
 .container{
-    /* border: 2px solid black; */
+    
     height:100%;
     margin: 10px;
     
 }
 .box1,.box2,.box3,.box3,.box4,.box5,.box6,.box7,.box8{
-    /* border: 2px solid black; */
+    
     display: inline-block;
     width:281px;
     margin:10px;
