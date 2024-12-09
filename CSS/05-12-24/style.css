@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> 7ff6079fa443eeb8e7a692cb30697ec1f414ea5c
 .main-container {
     background-image: url("./images/architect.jpg");
     background-size: cover;
@@ -28,14 +31,22 @@
     color: white;
     margin: 0;
 }
+<<<<<<< HEAD
+=======
+
+
+
+
+
+>>>>>>> 7ff6079fa443eeb8e7a692cb30697ec1f414ea5c
 .container{
-    /* border: 2px solid black; */
+    
     height:100%;
     margin: 10px;
     
 }
 .box1,.box2,.box3,.box3,.box4,.box5,.box6,.box7,.box8{
-    /* border: 2px solid black; */
+    
     display: inline-block;
     width:281px;
     margin:10px;
