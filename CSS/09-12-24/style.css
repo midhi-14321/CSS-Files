@@ -1,0 +1,37 @@
+
+/* answer 2 */
+.intro span {
+    color: red;
+}
+
+/* answer 2 */
+
+.list-container > ul {
+    border: 1px solid blue;
+}
+
+/* answer 3 */
+
+h1 + h2 {
+    color: green;
+}
+/* answer 4 */
+
+.sidebar ~ p {
+    font-style: italic;
+}
+/* answer 5 */
+form button[type="submit"] {
+    background-color: yellow;
+}
+
+/* answer 6 */
+
+.outer-container > div:has(.inner-text) {
+    padding: 10px;
+    border: 2px solid black;
+}
+  
+  
+  
+  
