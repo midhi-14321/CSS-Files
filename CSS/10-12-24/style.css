@@ -107,7 +107,7 @@ a{
     text-decoration: none;
     color: white; 
 }
-.box2:hover>.circle,.box3:hover>.circle,.box4:hover>.circle{
+.box2:hover>.circle,.box3:hover>.circle1,.box4:hover>.circle{
     background-color: red;
     color: white;
 }
