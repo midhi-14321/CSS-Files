@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    vertical-align: top;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.container {
+    width: 100%;
+    border: 2px solid black;
+    background-color: rgb(220, 218, 215);
+    display: inline-block;
+    padding:60px 40px;
+}
+
+.box1 {
+    background-color: red;
+    height: 480px;
+    width: 350px;
+    display: inline-block;
+    color: white;
+    padding: 35px;
+    
+}
+
+.box1>p {
+    margin-top: 15px;
+    font-size: 17px;
+}
+
+.box2,.box3,.box4{
+    height: 480px;
+    width: 240px;
+    font-size: 28px;
+    background-color: white;
+    text-align: center;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.circle{
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    position:relative;
+    top:90px;
+    left:75px;
+    background-color: hsl(350, 39%, 91%);
+    margin-bottom: 110px;
+    color:red;
+}
+.circle1{
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    position:relative;
+    top:100px;
+    left:75px;
+    background-color: hsl(350, 39%, 91%);
+    margin-bottom: 110px;
+    color:red;
+}
+
+.circle>i,.circle1>i{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+.p1 {
+    font-size: 22px;
+    font-weight: 600;
+    padding:10px 25px;
+    
+}
+.p2 {
+    font-size: 16px;
+    padding:20px 28px; 
+}
+.p3 {
+    font-size: 22px;
+    font-weight: 600;
+    padding:20px 25px;
+    
+}
+.p4 {
+    font-size: 16px;
+    padding:20px 28px; 
+}
+.box1:hover>i {
+    color: white;
+    background-color: red;
+}
+button{
+    border-radius: 30px;
+    padding: 10px 40px;
+    font-size: 16px;
+    background-color: rgb(244, 96, 96);
+    border:none;
+    margin:35px;
+    margin-left: 40px;
+    display: inline-block;
+}
+a{
+    text-decoration: none;
+    color: white; 
+}
+.box2:hover>.circle,.box3:hover>.circle,.box4:hover>.circle{
+    background-color: red;
+    color: white;
+}
