@@ -17,7 +17,7 @@
 .box1 {
     background-color: red;
     height: 480px;
-    width: 350px;
+    width: 360px;
     display: inline-block;
     color: white;
     padding: 35px;
@@ -37,6 +37,7 @@
     text-align: center;
     display: inline-block;
     margin-left: 20px;
+    
 }
 
 .circle{
@@ -110,4 +111,12 @@ a{
 .box2:hover>.circle,.box3:hover>.circle1,.box4:hover>.circle{
     background-color: red;
     color: white;
+    transition: 0.5s ease;
+}
+button:hover{
+    background-color: white;
+    transition: 0.4s ease;
+}
+a:hover{
+    color:red;
 }
