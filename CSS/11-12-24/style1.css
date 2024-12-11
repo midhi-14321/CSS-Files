@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    vertical-align: top;
+}
+
+body {
+    background-color: rgb(220, 218, 215);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 40px;
+}
+
+.box1 {
+    background-color: red;
+    color: white;
+    padding: 35px;
+    width: 360px;
+    height:415px;
+    flex-shrink: 0;
+}
+
+.box1 p {
+    margin: 20px 0;
+    font-size: 16px;
+}
+
+button {
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    background-color: rgb(244, 96, 96);
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 50px;
+    color:white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button:hover {
+    background-color: white;
+    color: red;
+    transition: 0.3s ease;
+}
+button:hover a{
+    color:inherit;
+}
+
+.feature {
+    background-color: white;
+    width: 240px;
+    height:415px;
+    text-align: center;
+    padding: 20px;
+    flex-shrink: 0;
+}
+
+.circle {
+    background-color: hsl(350, 39%, 91%);
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:30px;
+    margin-left:60px;
+    color: red;
+    font-size: 30px;
+}
+
+.feature:hover>.circle {
+    background-color: red;
+    color: white;
+    transition: 0.3s ease;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-top: 25px;
+    padding:10px 25px;
+}
+
+.desc {
+    font-size: 16px;
+    color: #555;
+    padding:15px 10px;
+}
