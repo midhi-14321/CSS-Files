@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *{
     margin:0;
     padding:0;
@@ -113,3 +114,120 @@
 .flex-space-around{
     align-content:space-around;
 }
+=======
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.container{
+    background-color: pink;
+}
+.same{
+    border:2px solid red;
+    display: flex;
+    padding:10px;
+    gap:10px;
+    margin-bottom: 10px;
+}
+.row{
+    flex-direction: row;
+}
+.column{
+    flex-direction: column;
+}
+.row-reverse{
+    flex-direction: row-reverse;
+}
+.column-reverse{
+    flex-direction: column-reverse;
+}
+.item{
+    text-align: center;
+    border:2px solid black;
+    width:50px;
+    height: 50px;
+    background-color: aquamarine;
+
+}
+.common{
+    border:2px solid red;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    padding:10px;
+    gap:10px;
+    margin-bottom: 10px;
+}
+.flex-start{
+    align-items: flex-start;
+}
+.center{
+    align-items: center;
+}
+.end{
+    align-items: end;
+}
+.strech{
+    align-items: stretch;
+}
+.item1{
+    text-align: center;
+    border:2px solid black;
+    width:50px;
+    background-color: aquamarine;
+
+}
+.similar{
+    border:2px solid red;
+    height:200px;
+    display: flex;
+    flex-direction: row;
+    padding:10px;
+    gap:10px;
+    margin-bottom: 10px
+}
+.flex-start1{
+    justify-content: flex-start;
+ }
+.center1{
+    justify-content: center;
+ }
+.end1{
+    justify-content: end;
+}
+.space-evenly{
+    justify-content: space-evenly;
+}
+.space-around{
+    justify-content: space-around;
+}
+.space-between{
+    justify-content: space-between;
+}
+.flex-similar{
+    border:2px solid red;
+    height:300px;
+    display: flex;
+    padding:10px;
+    width:250px;
+    gap:10px;
+    margin-bottom: 10px;
+    flex-wrap:wrap;
+}
+.flex-start2{
+    align-content: start;
+}
+.flex-center2{
+    align-content: center;
+}
+.flex-end2{
+    align-content: end;
+}
+.flex-space-between{
+    align-content: space-between;
+}
+.flex-space-around{
+    align-content:space-around;
+}
+>>>>>>> 8b1cdb74b9c60a3711ae770533b974f13f770a27
