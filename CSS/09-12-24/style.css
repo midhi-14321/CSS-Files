@@ -1,5 +1,5 @@
 
-/* answer 2 */
+/* answer 1 */
 .intro span {
     color: red;
 }
@@ -31,7 +31,24 @@ form button[type="submit"] {
     padding: 10px;
     border: 2px solid black;
 }
-  
+.container{
+    border: 2px solid black;
+    height: 300px;
+    width: 300px;
+    overflow: scroll;
+    
+
+    
+}
+.container::-webkit-scrollbar{
+    display: none; 
+    
+}
+
+
+
+
+    
   
   
   

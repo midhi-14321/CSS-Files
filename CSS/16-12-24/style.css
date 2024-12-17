@@ -1,0 +1,56 @@
+/* Navigation Menu */
+nav ul li:first-child {
+    font-weight: bold;
+}
+
+nav ul li:last-child {
+    color: red;
+}
+
+nav ul li:nth-child(2n) {
+    background-color: lightgrey;
+}
+
+nav ul li:nth-last-child(2) {
+    font-style: italic;
+}
+
+/* Form Input Styles */
+input:focus {
+    outline: 2px solid green;
+}
+
+input:enabled {
+    border: 1px solid black;
+}
+
+input:checked + label {
+    color: yellow;
+    font-weight: bold;
+}
+
+/* Buttons */
+button:hover {
+    background-color: lightblue;
+    cursor: pointer;
+}
+
+button:active {
+    background-color: darkblue;
+    color: white;
+}
+
+button:disabled {
+    background-color: grey;
+    cursor: not-allowed;
+}
+
+/* Footer Links */
+a:link {
+    color: blue;
+    text-decoration: none;
+}
+
+a:visited {
+    color: purple;
+}
