@@ -1,71 +1,284 @@
-*{
+* {
     padding: 0;
-    margin:0;
+    margin: 0;
     box-sizing: border-box;
-    
+
 }
-body{
+
+body {
     display: flex;
     justify-content: center;
     margin-top: 20px;
 }
 
 
-.main-container{
+.main-container {
     border: 1px solid black;
     height: 500px;
-    width:600px;
-    
-    
+    width: 600px;
+
+
 }
 
-.container{
+.container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     margin-top: 15px;
 }
-button{
+
+button {
     background-color: antiquewhite;
-    color:black;
+    color: black;
     padding: 10px 20px;
 }
 
-.container>.trans:hover ~ .box{
+.container>.trans:hover~.box {
     transform: translateY(15px);
 }
-.container>.scale:hover ~ .box{
-    transform:scale(1.5);
-}
-.container>.rotate:hover ~ .box{
-    transform:rotate(280deg);
-}
-.container>.skew:hover ~ .box{
-    transform:skew(18deg, 18deg);
-}
-.box{
-    position: absolute;
-    height: 100px;
-    width:100px;
-    top:50%;
-    border:1px solid black;
-    
-}
-img{
-    position: absolute;
-    top:30px;
-    right:30px;
-    height:50px;
-    width:50px;
-    
-    transition:transform 0.3 ease;
+
+.container>.scale:hover~.box {
+    transform: scale(1.5);
 }
 
+.container>.rotate:hover~.box {
+    transform: rotate(280deg);
+}
+
+.container>.skew:hover~.box {
+    transform: skew(18deg, 18deg);
+}
+
+.box {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top: 50%;
+    border: 1px solid black;
+
+}
+
+.box2 {
+    position: absolute;
+    transition: 0.4s ease;
+
+}
+
+img {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    height: 50px;
+    width: 50px;
+    transition: transform 0.3 ease;
+}
 @media screen and (width <= 450px){
     .main-container{
         width:340px;
     }
     .box{
         top:30%;
+    }
+    .box2{
+        top:10%;
+    }
+}
+
+.a{
+    position: absolute;
+    top:50%;
+    right:10%;
+}
+
+/*task2*/
+.img1 {
+    position: absolute;
+    top: 150px;
+    right: -70px;
+    height: 200px;
+    width: 200px;
+    transition: transform 1s linear;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.container>.no1:hover~.box2>.img1 {
+    animation: rotate 3s linear infinite;
+}
+
+.container>.no2:hover~.box2>.img1 {
+    animation: rotate 2s linear infinite;
+}
+
+.container>.no3:hover~.box2>.img1 {
+    animation: rotate 1s linear infinite;
+}
+
+.container>.no4:hover~.box2>.img1 {
+    animation: rotate 0.4s linear infinite;
+}
+
+/*task3*/
+.main {
+    height: 300px;
+    width: 300px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.circle {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.circle1 {
+    background-color: blue;
+    animation-name: slide;
+    animation-duration: 1.2s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+.circle2 {
+    background-color: red;
+    animation-name: slide;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-duration: 1.5s;
+}
+
+.circle3 {
+    background-color: yellow;
+    animation-name: slide;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-duration: 1.8s;
+}
+
+.circle4 {
+    background-color: green;
+    animation-name: slide;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-duration: 2.0s;
+}
+
+@keyframes slide {
+    0% {
+
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(13px);
+
+
+    }
+
+    75% {
+        transform: translateY(0px);
+
+    }
+
+    100% {
+        transform: translateY(13px);
+
+    }
+
+}
+@media screen and (width <= 450px){
+    .main{
+        width:250px;
+    }
+    
+}
+/*task4*/
+.bar{
+    width: 35px;
+}
+p{
+    color:chartreuse;
+    font-size: xx-large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.music{
+    border-radius: 50%;
+    border:none;
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+    justify-content: center;
+    align-items: center;
+    background-image:linear-gradient(red,orange,blue,yellow,green);
+    
+}
+.bar1{
+    background-color: red;
+    animation-delay: 0.4s;
+    animation-name: player;
+    animation-timing-function: ease;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+.bar2{
+    background-color: orange;
+    animation-delay: 0.6s;
+    animation-name: player;
+    animation-timing-function: ease;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+.bar3{
+    background-color: lightblue;
+    animation-delay: 0.8s;
+    animation-name: player;
+    animation-timing-function: ease;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+.bar4{
+    background-color: yellow;
+    animation-delay: 1.0s;
+    animation-name: player;
+    animation-timing-function: ease;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+.bar5{
+    background-color: greenyellow;
+    animation-delay: 1.2s;
+    animation-name: player;
+    animation-timing-function: ease;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+
+}
+@keyframes player{
+    0%{
+        height: 35px;
+    }
+    25%{
+        height: 69px;
+    }
+    55%{
+        height: 101px;
+    }
+    75%{
+        height: 125px;
+    }
+    85%{
+        height: 70px;
+    }
+    100%{
+         height: 20px;
     }
 }
