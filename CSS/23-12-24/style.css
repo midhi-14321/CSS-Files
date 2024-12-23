@@ -195,10 +195,3 @@ body{
     grid-row: 4/5;
     border:5px solid black
 }
-@media screen and (width <= 450px) {
-    .parent{
-        width:50%;
-        height:90vh;
-    }
-    
-}
